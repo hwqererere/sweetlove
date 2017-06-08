@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>母婴课堂</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+
+</head>
+<body>
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+  
+  
+  <!--banner7-->
+  <div class="html room">
+
+  </div>
+  <!--banner7-->
+
+  <div class="cl"></div>
+
+  <!--母婴课堂-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">母婴课堂</h1>
+        <h3 class="purpose-title colorFF8AB9">New Mother School</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgFF8AB9"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+      <div class="newinfant newinfantborder1">
+        <dl class="d_left loadmore" style="background:url({$ad1}) center center no-repeat">
+          <span class="newinfantcolor1"></span>
+          <em>{$cat_name1}</em>
+          <a href="list.php?cat_id=8">MORE></a>
+        </dl>
+        <dl class="d_middle">
+          <dt ><img src="{$art1_image}"><span class="word"><h1>{$art1_title|truncate:11:"…"}</h1>{$art1_description|truncate:70:"…"}</span><a href="page.php?id={$art1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$art2_image}"><span class="word"><h1>{$art2_title|truncate:11:"…"}</h1>{$art2_description|truncate:70:"…"}</span><a href="page.php?id={$art2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_right">
+          <dt ><img src="{$art3_image}"><span class="word"><h1>{$art3_title|truncate:10:"…"}</h1>{$art3_description|truncate:10:"…"}</span><a href="page.php?id={$art3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$art4_image}"><span class="word"><h1>{$art4_title|truncate:10:"…"}</h1>{$art4_description|truncate:10:"…"}</span><a href="page.php?id={$art4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+      </div>
+
+      <div class="newinfant newinfantborder2 mt20">     
+        <dl class="d_left">
+          <dt ><img src="{$brt1_image}"><span class="word"><h1>{$brt1_title|truncate:11:"…"}</h1>{$brt1_description|truncate:70:"…"}</span><a href="page.php?id={$brt1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$brt2_image}"><span class="word"><h1>{$brt2_title|truncate:11:"…"}</h1>{$brt2_description|truncate:70:"…"}</span><a href="page.php?id={$brt2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_middle loadmore" style="background:url({$ad2}) center center no-repeat">
+          <span class="newinfantcolor2"></span>
+          <em>{$cat_name2}</em>
+          <a href="list.php?cat_id=9">MORE></a>
+        </dl>
+        <dl class="d_right">
+          <dt ><img src="{$brt3_image}"><span class="word"><h1>{$brt3_title|truncate:11:"…"}</h1>{$brt3_description|truncate:70:"…"}</span><a href="page.php?id={$brt3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$brt4_image}"><span class="word"><h1>{$brt4_title|truncate:11:"…"}</h1>{$brt4_description|truncate:70:"…"}</span><a href="page.php?id={$brt4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+      </div>
+
+      <div class="newinfant newinfantborder3 mt20">     
+        <dl class="d_left">
+          <dt ><img src="{$crt1_image}"><span class="word"><h1>{$crt1_title|truncate:11:"…"}</h1>{$crt1_description|truncate:70:"…"}</span><a href="page.php?id={$crt1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$crt2_image}"><span class="word"><h1>{$crt2_title|truncate:11:"…"}</h1>{$crt2_description|truncate:70:"…"}</span><a href="page.php?id={$crt2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_middle">
+          <dt ><img src="{$crt3_image}"><span class="word"><h1>{$crt3_title|truncate:11:"…"}</h1>{$crt3_description|truncate:70:"…"}</span><a href="page.php?id={$crt3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$crt4_image}"><span class="word"><h1>{$crt4_title|truncate:11:"…"}</h1>{$crt4_description|truncate:70:"…"}</span><a href="page.php?id={$crt4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_right loadmore" style="background:url({$ad3}) center center no-repeat">
+          <span class="newinfantcolor3"></span>
+          <em>{$cat_name3}</em>
+          <a href="list.php?cat_id=10">MORE></a>
+        </dl>
+        
+      </div>
+      <div class="newinfant newinfantborder4  mt20">
+        <dl class="d_left loadmore" style="background:url({$ad4}) center center no-repeat">
+          <span class="newinfantcolor4"></span>
+          <em>{$cat_name4}</em>
+          <a href="list.php?cat_id=11">MORE></a>
+        </dl>
+        <dl class="d_middle">
+          <dt ><img src="{$drt1_image}"><span class="word"><h1>{$drt1_title|truncate:11:"…"}</h1>{$drt1_description|truncate:70:"…"}</span><a href="page.php?id={$drt1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$drt2_image}"><span class="word"><h1>{$drt2_title|truncate:11:"…"}</h1>{$drt2_description|truncate:70:"…"}</span><a href="page.php?id={$drt2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_right">
+          <dt ><img src="{$drt3_image}"><span class="word"><h1>{$drt3_title|truncate:10:"…"}</h1>{$drt3_description|truncate:10:"…"}</span><a href="page.php?id={$drt3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$drt4_image}"><span class="word"><h1>{$drt4_title|truncate:10:"…"}</h1>{$drt4_description|truncate:10:"…"}</span><a href="page.php?id={$drt4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+      </div>
+
+            <div class="newinfant newinfantborder5 mt20">     
+        <dl class="d_left">
+          <dt ><img src="{$ert1_image}"><span class="word"><h1>{$ert1_title|truncate:11:"…"}</h1>{$ert1_description|truncate:70:"…"}</span><a href="page.php?id={$ert1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$ert2_image}"><span class="word"><h1>{$ert2_title|truncate:11:"…"}</h1>{$ert2_description|truncate:70:"…"}</span><a href="page.php?id={$ert2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_middle loadmore" style="background:url({$ad5}) center center no-repeat">
+          <span class="newinfantcolor5"></span>
+          <em>{$cat_name5}</em>
+          <a href="list.php?cat_id=13">MORE></a>
+        </dl>
+        <dl class="d_right">
+          <dt ><img src="{$ert3_image}"><span class="word"><h1>{$ert3_title|truncate:11:"…"}</h1>{$ert3_description|truncate:70:"…"}</span><a href="page.php?id={$ert3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$ert4_image}"><span class="word"><h1>{$ert4_title|truncate:11:"…"}</h1>{$ert4_description|truncate:70:"…"}</span><a href="page.php?id={$ert4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+      </div>
+
+      <div class="newinfant newinfantborder6 mt20">     
+        <dl class="d_left">
+          <dt ><img src="{$frt1_image}"><span class="word"><h1>{$frt1_title|truncate:11:"…"}</h1>{$frt1_description|truncate:70:"…"}</span><a href="page.php?id={$frt1_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$frt2_image}"><span class="word"><h1>{$frt2_title|truncate:11:"…"}</h1>{$frt2_description|truncate:70:"…"}</span><a href="page.php?id={$frt2_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_middle">
+          <dt ><img src="{$frt3_image}"><span class="word"><h1>{$frt3_title|truncate:11:"…"}</h1>{$frt3_description|truncate:70:"…"}</span><a href="page.php?id={$frt3_id}"><span class="more">阅读全文</span></a></dt>
+          <dt ><img src="{$frt4_image}"><span class="word"><h1>{$frt4_title|truncate:11:"…"}</h1>{$frt4_description|truncate:70:"…"}</span><a href="page.php?id={$frt4_id}"><span class="more">阅读全文</span></a></dt>
+        </dl>
+        <dl class="d_right loadmore" style="background:url({$ad6}) center center no-repeat">
+          <span class="newinfantcolor6"></span>
+          <em>{$cat_name6}</em>
+          <a href="list.php?cat_id=14">MORE></a>
+        </dl>
+        
+      </div>
+
+
+
+
+      <!--aa-->
+    </div>
+  </div>
+  <!--母婴课堂-->
+  <div class="cl"></div>
+     {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+</body> 
+</html>

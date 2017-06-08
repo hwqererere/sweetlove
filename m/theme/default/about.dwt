@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+           <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+    <title>关于甜爱_{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+<!--head-->
+  <!--banner-->
+         <aside>
+            <section class="banner-w fu-title">
+                <div class="nei-banner">
+                    <img src="images/banner6.png">
+                </div>
+            </section>
+         </aside>
+    <!--banner-->
+ <!--mulu-->
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>企业简介</h3> <h5 class="colorF6AD02">About TAMY</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgF6AD02"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+        <!--list-->
+            <div class="about-ta">
+                <ul class="about-ul">
+                    <li class="left"><img src="images/about1.png" /></li>
+                    <li class="right"><img src="images/about2.png" /></li>
+                </ul>
+                <div class="about-txt"><p>
+                    {$article_0_content}</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        <!--list-->
+        </section>
+
+    </aside>
+<!--mulu-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+<!--bot-->
+</body>
+
+
+</html>

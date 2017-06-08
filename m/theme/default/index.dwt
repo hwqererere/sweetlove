@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+     <title>{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+    
+<!--head-->
+
+ <!--mulu-->
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>目录导航</h3> <h5 class="color85D2E7">INDEX</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bg85D2E7"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+        <!--list-->
+            <ul class="home-index">
+                <li class="left"><a href="home.php" class="home-index1">首页</a></li>
+                <li class="right"><a href="yue.php" class="home-index2">月嫂</a></li>
+
+                <li class="left"><a href="yus.php" class="home-index3">育婴师</a></li>
+                <li class="right"><a href="processes.php" class="home-index4">服务流程</a></li>
+
+                <li class="left"><a href="professional.php" class="home-index5">专业培训</a></li>
+                <li class="right"><a href="infant.php" class="home-index6">母婴课堂</a></li>
+
+                <li class="left"><a href="about.php" class="home-index7">关于甜爱</a></li>
+                <li class="right"><a href="contact.php" class="home-index8">联系我们</a></li>
+
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+        <!--list-->
+        </section>
+
+    </aside>
+<!--mulu-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+    
+<!--bot-->
+</body>
+
+
+</html>

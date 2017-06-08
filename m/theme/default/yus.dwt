@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+    <title>{$article_category_title}_{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+<!--head-->
+
+    <!--banner-->
+         <aside>
+            <section class="banner-w fu-title">
+                <div class="nei-banner">
+                    <img src="images/banner2.png">
+                </div>
+            </section>
+         </aside>
+    <!--banner-->
+ <!--mulu--> 
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>育儿嫂服务</h3> <h5 class="colorF6AD02">BABY CARE SERVICES</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgF6AD02"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+           <!--list-->
+                <ul class="yue-list">
+                    <a href="page.php?id={$article_0_id}"> 
+                        <li class="mud5 left"><img src="{$article_0_image}"><div class="yue-text3">{$article_0_title}</div></li>
+                    </a>
+
+                     <a href="page.php?id={$article_1_id}"> 
+                        <li class="mud5 right"><img src="{$article_1_image}"><div class="yue-text3">{$article_1_title}</div></li>
+                    </a>
+                </ul>
+
+                <ul class="yue-list">
+                    <a href="page.php?id={$article_2_id}"> 
+                        <li class="mud5 left"><img src="{$article_2_image}"><div class="yue-text3">{$article_2_title}</div></li>
+                    </a>
+
+                     <a href="page.php?id={$article_3_id}"> 
+                        <li class="mud5 right"><img src="{$article_3_image}"><div class="yue-text3">{$article_3_title}</div></li>
+                    </a>
+                </ul>
+            <!--list-->
+        </section>
+
+    </aside>
+    <div class="clear"></div>
+<!--mulu-->
+
+ 
+
+<!--f3-->
+<aside>
+    <section   class="banner-w fu-title">
+         <h3>服务资费</h3> <h5 class="colorF6AD02">SERVICES PRICE</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgF6AD02"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+    
+        <!--list-->
+            <table cellpadding="0" cellspacing="0" class="qian">
+                <tbody><tr>
+                    <td colspan="2" rowspan="2" align="center" width="70%" ><span class="colorF6AD02 fontsize30">甜爱母婴育儿嫂服务内容</span></td>
+                    <!-- {foreach from=$fate item=fat name=fat} -->
+                    {if $fat.money2 > 1} 
+          <td class="lve1" {if $smarty.foreach.fat.index == 0} style="background-color:#e16567" {/if}{if $smarty.foreach.fat.index == 1} style="background-color:#ec6601" {/if}{if $smarty.foreach.fat.index == 2} style="background-color:#f6ab00" {/if}{if $smarty.foreach.fat.index == 3} style="background-color:#653d94" {/if}><label>{$fat.name}</label><br/><span>元/月</span></td>  
+           {/if}         
+          <!-- {/foreach} -->
+        </tr>
+        <tr>
+          <!-- {foreach from=$fate item=fat} -->
+           {if $fat.money2 > 1} 
+          <td class="lve1-q">{$fat.money2}</td>    
+          {/if}         
+          <!-- {/foreach} -->
+        </tr>
+                
+               {$cont1}
+
+
+            </tbody></table>
+
+        <!--list-->
+    </section>
+
+</aside>
+<div class="clear"></div>
+<!--f3-->
+
+<!--bot-->
+{include file="inc/footer.tpl"}
+<!--bot-->
+</body>
+
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  <script type="text/javascript" src="theme/default/images/jquery.min.js"></script>
+    <style>
+{literal}
+.mt-number-animate{ line-height:40px; height: 40px; font-size: 24px; overflow: hidden; display: inline-block; position: relative;margin-top:10px; }
+.mt-number-animate .mt-number-animate-dot{ width: 15px;line-height: 40px; float: left; text-align: center;}
+.mt-number-animate .mt-number-animate-dom{ width: 22px; text-align: center; float: left; position: relative; top: 0;}
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span{ width: 100%; float: left;}
+{/literal}
+  </style>
+</head>
+<body>
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+  <!--banner-->
+    <div class="html banner relative" _index="0"> 
+     <!-- {foreach from=$show_list name=show item=show} -->
+    <div><a href="{$show.show_link}" target="_blank" style="background:url({$show.show_img}) center center no-repeat"></a></div>    
+      <!-- {/foreach} -->
+
+
+
+      <ul class="bannerpoint">
+      <!-- {foreach from=$show_list name=show item=show} -->
+      <li {if $smarty.foreach.show.index == 0}class="sel" {/if}></li>
+      <!-- {/foreach} -->
+     
+
+
+      </ul>
+    </div>
+  <!--banner-->
+  <div class="cl"></div>
+
+  <!--服务宗旨-->
+    <div class="html mt30">
+      <div class="body">
+        <h1 class="purpose">服务宗旨</h1>
+        <h3 class="purpose-title colorF6AD02">SERVICE AIM</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgF6AD02"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+        <div class="purpose-full">
+        <ul class="purpose-ul">
+          <li class="fu1">
+            <div><span class="purpose-ul-title colorF6AD02">细心</span> <span class="purpose-ul-en color808080">Intimate</span></div>
+
+            <div class="purpose-ul-text">{$zz_description1}</div>
+          </li>
+
+          <li class="fu2">
+            <div><span class="purpose-ul-title colorEC6921">专心</span> <span class="purpose-ul-en color808080">Attentive</span></div>
+
+            <div class="purpose-ul-text">{$zz_description2}</div>
+          </li>
+
+          <li class="fu3">
+            <div><span class="purpose-ul-title color80B92D">耐心</span> <span class="purpose-ul-en color808080">Patience</span></div>
+
+            <div class="purpose-ul-text">{$zz_description3}</div>
+          </li>
+          </ul>
+        <ul class="purpose-ul">
+          <li class="fu4">
+            <div><span class="purpose-ul-title color85D2E7">放心</span> <span class="purpose-ul-en color808080">Relieved</span></div>
+
+            <div class="purpose-ul-text">{$zz_description4}</div>
+          </li>
+
+          <li class="fu5">
+            <div><span class="purpose-ul-title colorF25795">贴心</span> <span class="purpose-ul-en color808080">Close</span></div>
+
+            <div class="purpose-ul-text">{$zz_description5}</div>
+          </li>
+          <li class="fu6">
+            <div><span class="purpose-ul-title colorE16C6C">舒心</span> <span class="purpose-ul-en color808080">Happy</span></div>
+
+            <div class="purpose-ul-text">{$zz_description6}</div>
+          </li>
+
+        </ul>
+        <div class="cl"></div>
+        </div>
+        <div class="cl"></div>
+
+      </div>
+      
+    </div>
+
+  <!--服务宗旨-->
+
+  <div class="cl"></div>
+  <!--banners-->
+    <div class="html bannes">
+      <div class="body">
+        <div class="tian-but clearfix">
+        <center>
+          <a href="javascript:AddFavorite('{$page_title}','www.lovetamy.com');" class="mr10">收藏甜爱</a>
+          <a href="about.php">关于我们</a>
+        </center>
+        </div>        
+      </div>
+    </div>
+  <!--banners-->
+  <div class="cl"></div>
+  <!--服务内容-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">服务内容</h1>
+        <h3 class="purpose-title colorF25795">SERVICES INCLUDE</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgF25795"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      <div class="cl"></div>
+      <ul class="services-ul mt10 clearfix">
+        <li class="mr30">
+          <div class="services-title relative color808080">月嫂服务<div class="services-line bgF25795" style="display:none"></div></div>
+          
+          <div class="services-text services-bg1 mt10">
+              <ul class="services-text-ul">
+                <li class="bgFF8AB9"><a href="javascript:;">服务项目</a></li>
+                <!-- {foreach from=$sv1 item=cf} --> 
+                <li class=""><a href="yue.php?id={$cf.id}">{$cf.name}</a></li>                
+                <!-- {/foreach} -->
+                <div class="cl"></div>
+              </ul>
+              <center>
+              <a href="yue.php" class="more">查看详情</a>
+              </center>
+          </div>
+        </li>
+        <li>
+          <div class="services-title relative color808080">育婴师服务<div class="services-line bg85D2E7" style="display:none"></div></div>
+          
+          <div class="services-text services-bg2 mt10">
+              <ul class="services-text-ul-right">
+                <li class="bg85D2E7"><a href="javascript:;">服务项目</a></li>
+                <!-- {foreach from=$sv2 item=cf} -->
+
+                <li class=""><a href="yus.php?id={$cf.id}">{$cf.name}</a></li>
+
+                <!-- {/foreach} -->
+                
+                <div class="cl"></div>
+              </ul>
+              <center>
+              <a href="yus.php" class="more2">查看详情</a>
+              </center>
+          </div>
+
+        </li>
+      </ul>
+      <div class="cl"></div>
+    </div>
+  </div>
+  <!--服务内容-->
+
+  <div class="cl"></div>
+  <!--banner4-->
+  <div class="html mt20 banner5 clearfix">
+    <div class="body">
+      <center>
+        <ul class="main-list">
+          <li>
+            <div class="main-t-txt ls1">
+              <span class="numberRun1" num="{$num1}"></span>
+              位
+            </div>
+            月嫂
+          </li>
+
+          <li>
+            <div class="main-t-txt ls2">
+              <span class="numberRun2" num="{$num2}"></span>
+              位
+            </div>
+            育婴师
+          </li>
+
+          <li>
+            <div class="main-t-txt ls3">
+              <span class="numberRun3" num="{$num3}"></span>
+              项
+            </div>
+            专业服务
+          </li>
+
+          <li style="margin-right: 0;">
+            <div class="main-t-txt ls4">
+              <span class="numberRun4" num="{$num4}"></span>
+              节
+            </div>
+            培训课程
+          </li>
+        <div class="cl"></div>
+        </ul>
+
+      </center>
+    </div>
+  <div class="cl"></div>
+  </div>
+  <!--banner4-->
+  <div class="cl"></div>
+
+  <!--母婴课堂-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">母婴课堂</h1>
+        <h3 class="purpose-title color85D2E7">New Mother School</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bg85D2E7"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+    <div class="school-txt">
+      <ul class="school-ul">
+        <li class="bdg85D2E7" style="background:url({$ad1}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bg85D2E7">育儿知识</div>
+          <div class="school-text ">
+          <!-- {foreach from=$art item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=8" class="morelink" style="color:#85D2E7;">MORE <font>></font></a>
+        </li>
+        
+        <li class="bdg84BF2C" style="background:url({$ad2}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bg84BF2C">孕期知识</div>
+          <div class="school-text ">
+          <!-- {foreach from=$brt item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=9" class="morelink" style="color:#84BF2C">MORE <font>></font></a>
+        </li>
+
+      <li class="bdgF25795" style="background:url({$ad3}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bgF25795">新闻八卦</div>
+          <div class="school-text ">
+          <!-- {foreach from=$crt item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=10" class="morelink" style="color:#F25795;">MORE <font>></font></a>
+        </li>
+
+        <li class="bdgEC774B" style="background:url({$ad4}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bgEC774B">月子知识</div>
+          <div class="school-text ">
+          <!-- {foreach from=$drt item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=11" class="morelink" style="color:#EC774B;">MORE <font>></font></a>
+        </li>
+     
+        <li class="bdgEDBF47" style="background:url({$ad5}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bgEDBF47">备孕须知</div>
+          <div class="school-text ">
+          <!-- {foreach from=$ert item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=13" class="morelink" style="color:#EDBF47;">MORE <font>></font></a>
+        </li>
+       
+        <li class="bdgE16C6C" style="background:url({$ad6}) 50% top no-repeat;background-size:100% auto;">
+          <div class="school-pic bgE16C6C">生活小贴士</div>
+          <div class="school-text ">
+          <!-- {foreach from=$frt item=ar} -->
+            <a href="page.php?id={$ar.id}">{$ar.title|truncate:18:"…"}</a>
+          <!-- {/foreach} -->
+            
+          </div>
+          <a href="list.php?cat_id=13" class="morelink" style="color:#E16C6C;">MORE <font>></font></a>
+        </li>
+
+
+      
+
+      </ul>
+
+    </div>
+      <center>
+        <a href="infant.php" class="ljgd">了解更多...</a>
+      </center>
+    </div>
+  
+  </div>
+
+  <!--母婴课堂-->
+  <div class="cl"></div>
+     {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+
+
+<script>
+{literal}
+
+
+var time="";
+
+function activeon(mid){
+  var div=$(".banner").find("div");
+  if(div.length>1){
+    time=setInterval(function(){
+      var nex=$(".banner").attr("_index")-0+1;
+      if(nex==div.length){
+        nex=0;
+      }
+      banner(nex);
+    },mid);
+
+  }
+  
+}
+
+$(".bannerpoint li").hover(function(){
+    var nex=$(this).index();
+    banner(nex,1000);
+    clearTimeout(time);
+},function(){
+    activeon(10000);
+});
+
+
+
+activeon(10000);
+
+function banner(nex){ 
+      var div=$(".banner").find("div");     
+      div.eq($(".banner").attr("_index")).css("z-index","999");
+      div.eq(nex).css("z-index","99");
+      div.eq($(".banner").attr("_index")).animate({opacity:0},100,function(){
+        div.eq($(".banner").attr("_index")).css("z-index","0");
+        div.eq($(".banner").attr("_index")).css("opacity","1");
+        $(".banner").attr("_index",nex);
+        $(".bannerpoint li").removeClass("sel");
+        $(".bannerpoint li").eq(nex).addClass("sel");
+        
+      });
+    }
+
+
+  function AddFavorite(title, url) {
+ try {
+   window.external.addFavorite(url, title);
+ }
+catch (e) {
+   try {
+    window.sidebar.addPanel(title, url, "");
+  }
+   catch (e) {
+     alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请进入新网站后使用Ctrl+D进行添加");
+   }
+ }
+}
+
+
+
+
+;(function($) {
+  $.fn.numberAnimate = function(setting) {
+    var defaults = {
+      speed : 1000,
+      num : "",
+      iniAnimate : true, 
+      symbol : '',
+      dot : 0 
+    }
+
+    var setting = $.extend(defaults, setting);
+  
+
+    if($(this).length > 1){
+      alert("just only one obj!");
+      return;
+    }
+  
+
+    if(setting.num == ""){
+      alert("must set a num!");
+      return;
+    }
+    var nHtml = '<div class="mt-number-animate-dom" data-num="{{num}}">\
+            <span class="mt-number-animate-span">0</span>\
+            <span class="mt-number-animate-span">1</span>\
+            <span class="mt-number-animate-span">2</span>\
+            <span class="mt-number-animate-span">3</span>\
+            <span class="mt-number-animate-span">4</span>\
+            <span class="mt-number-animate-span">5</span>\
+            <span class="mt-number-animate-span">6</span>\
+            <span class="mt-number-animate-span">7</span>\
+            <span class="mt-number-animate-span">8</span>\
+            <span class="mt-number-animate-span">9</span>\
+            <span class="mt-number-animate-span">.</span>\
+          </div>';
+  
+
+    var numToArr = function(num){
+      num = parseFloat(num).toFixed(setting.dot);
+      if(typeof(num) == 'number'){
+        var arrStr = num.toString().split("");  
+      }else{
+        var arrStr = num.split("");
+      }
+      return arrStr;
+    }
+  
+    var setNumDom = function(arrStr){
+      var shtml = '<div class="mt-number-animate">';
+      for(var i=0,len=arrStr.length; i<len; i++){
+        if(i != 0 && (len-i)%3 == 0 && setting.symbol != "" && arrStr[i]!="."){
+          shtml += '<div class="mt-number-animate-dot">'+setting.symbol+'</div>'+nHtml.replace("{{num}}",arrStr[i]);
+        }else{
+          shtml += nHtml.replace("{{num}}",arrStr[i]);
+        }
+      }
+      shtml += '</div>';
+      return shtml;
+    }
+
+    var runAnimate = function($parent){
+      $parent.find(".mt-number-animate-dom").each(function() {
+        var num = $(this).attr("data-num");
+        num = (num=="."?10:num);
+        var spanHei = $(this).height()/11; //11ÎªÔªËØ¸öÊý
+        var thisTop = -num*spanHei+"px";
+        if(thisTop != $(this).css("top")){
+          if(setting.iniAnimate){
+            //HTML5²»Ö§³Ö
+            if(!window.applicationCache){
+              $(this).animate({
+                top : thisTop
+              }, setting.speed);
+            }else{
+              $(this).css({
+                'transform':'translateY('+thisTop+')',
+                '-ms-transform':'translateY('+thisTop+')',   /* IE 9 */
+                '-moz-transform':'translateY('+thisTop+')',  /* Firefox */
+                '-webkit-transform':'translateY('+thisTop+')', /* Safari ºÍ Chrome */
+                '-o-transform':'translateY('+thisTop+')',
+                '-ms-transition':setting.speed/1000+'s',
+                '-moz-transition':setting.speed/1000+'s',
+                '-webkit-transition':setting.speed/1000+'s',
+                '-o-transition':setting.speed/1000+'s',
+                'transition':setting.speed/1000+'s'
+              }); 
+            }
+          }else{
+            setting.iniAnimate = true;
+            $(this).css({
+              top : thisTop
+            });
+          }
+        }
+      });
+    }
+
+    var init = function($parent){
+
+      $parent.html(setNumDom(numToArr(setting.num)));
+      runAnimate($parent);
+    };
+  
+
+    this.resetData = function(num){
+      var newArr = numToArr(num);
+      var $dom = $(this).find(".mt-number-animate-dom");
+      if($dom.length < newArr.length){
+        $(this).html(setNumDom(numToArr(num)));
+      }else{
+        $dom.each(function(index, el) {
+          $(this).attr("data-num",newArr[index]);
+        });
+      }
+      runAnimate($(this));
+    }
+
+    init($(this));
+    return this;
+  }
+})(jQuery);
+
+var flag=0;
+
+$(window).scroll(function () {
+
+       if ($(window).scrollTop() >= ($(".banner5").scrollTop()-200) && flag==0) {
+        var num1=$(".numberRun1").attr("num");
+        var num2=$(".numberRun2").attr("num");
+        var num3=$(".numberRun3").attr("num");
+        var num4=$(".numberRun4").attr("num");
+          $(".numberRun1").numberAnimate({num:num1, speed:2000});
+          $(".numberRun2").numberAnimate({num:num2, speed:2000});
+          $(".numberRun3").numberAnimate({num:num3, speed:2000});
+          $(".numberRun4").numberAnimate({num:num4, speed:2000});
+          flag=1;
+       }else{
+          flag=0;
+       }
+
+   });
+{/literal}
+</script>
+</body> 
+</html>

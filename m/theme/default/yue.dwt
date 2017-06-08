@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+    <title>{$article_category_title}_{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+    
+<!--head-->
+  <!--banner-->
+         <aside>
+            <section class="banner-w fu-title">
+                <div class="nei-banner">
+                    <img src="images/banner1.png">
+                </div>
+            </section>
+         </aside>
+    <!--banner--> 
+ <!--mulu-->
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>产妇护理服务</h3> <h5 class="colorFF8AB9">PUERPERA SERVICES</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgFF8AB9"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+            <!--list-->
+                <ul class="yue-list">
+                   <a href="page.php?id={$article_0_id}"> <li class="mud3 left"><img src="../{$article_0_image}"><div class="yue-text">{$article_0_title}</div></li></a>
+                    <a href="page.php?id={$article_1_id}"> <li class="mud6 right"><img src="../{$article_1_image}"><div class="yue-text">{$article_1_title}</div></li></a>
+                    <div class="clear"></div>
+                </ul>
+
+                <ul class="yue-list">
+                   <a href="page.php?id={$article_2_id}"> <li class="mud3  left"><img src="../{$article_2_image}"><div class="yue-text">{$article_2_title}</div></li></a>
+                    <a href="page.php?id={$article_3_id}"> <li class="mud3-3 right "><img src="../{$article_3_image}"><div class="yue-text">{$article_3_title}</div></li></a>
+                     <a href="page.php?id={$article_4_id}"> <li class="mud3-3  right ml1"><img src="../{$article_4_image}"><div class="yue-text">{$article_4_title}</div></li></a>
+                    <div class="clear"></div>
+                </ul>
+            <!--list-->
+        </section>
+
+    </aside>
+    <div class="clear"></div>
+<!--mulu-->
+
+
+<!--f2-->
+<aside>
+    <section  class="banner-w fu-title">
+             <h3>新生儿护理服务</h3> <h5 class="color84BF2C">NEW BORN BABY SERVICES</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bg84BF2C"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+
+            <!--list-->
+                <ul class="yue-list">
+                    <a href="page.php?id={$article2_0_id}"> 
+                        <li class="mud5 left"><img src="../{$article2_0_image}"><div class="yue-text2">{$article2_0_title}</div></li>
+                    </a>
+
+                     <a href="page.php?id={$article2_1_id}"> 
+                        <li class="mud5 right"><img src="../{$article2_1_image}"><div class="yue-text2">{$article2_1_title}</div></li>
+                    </a>
+                </ul>
+
+                <ul class="yue-list">
+                    <a href="page.php?id={$article2_2_id}"> 
+                        <li class="mud5 left"><img src="../{$article2_2_image}"><div class="yue-text2">{$article2_2_title}</div></li>
+                    </a>
+
+                     <a href="page.php?id={$article2_3_id}"> 
+                        <li class="mud5 right"><img src="../{$article2_3_image}"><div class="yue-text2">{$article2_3_title}</div></li>
+                    </a>
+                </ul>
+            <!--list-->
+    </section>
+</aside>
+
+
+<div class="clear"></div>
+<!--f2-->
+
+
+<!--f3-->
+<aside>
+    <section   class="banner-w fu-title">
+         <h3>服务资费</h3> <h5 class="colorFF8AB9">SERVICES PRICE</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgFF8AB9"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+    
+        <!--list-->
+            <table cellpadding="0" cellspacing="0" class="qian">
+                <tbody><tr>
+                    <td colspan="3" rowspan="2" align="center" width="70%"><span class="colorFF8AB9 fontsize30">甜爱母婴月嫂服务内容</span></td>
+                    <!-- {foreach from=$fate item=fat name=fat} -->
+                    {if $fat.money1 > 1}
+          <td class="lve1" style=" {if $smarty.foreach.fat.index == 0} background-color:#e16567 {/if}{if $smarty.foreach.fat.index == 1} background-color:#ec6601 {/if}{if $smarty.foreach.fat.index == 2} background-color:#f6ab00 {/if}{if $smarty.foreach.fat.index == 3}background-color:#653d94 {/if}"><label>{$fat.name}</label><br/><span>元/月</span></td>    
+          {/if}         
+          <!-- {/foreach} -->
+        </tr>
+        <tr>
+          <!-- {foreach from=$fate item=fat} -->
+           {if $fat.money1 > 1} 
+          <td class="lve1-q">{$fat.money1}</td>  
+          {/if}           
+          <!-- {/foreach} -->
+        </tr>
+                
+               {$cont1}
+       {$cont2}
+
+            </tbody></table>
+
+        <!--list-->
+    </section>
+
+</aside>
+<div class="clear"></div>
+<!--f3-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+    
+<!--bot-->
+</body>
+
+
+</html>

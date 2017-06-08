@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$lang.home}{if $ur_here} - 费率设置 {/if}</title>
+<meta name="Copyright" content="Douco Design." />
+<link href="templates/public.css" rel="stylesheet" type="text/css">
+{include file="javascript.htm"}
+<script type="text/javascript" src="images/jquery.tab.js"></script>
+{literal}
+<style type="text/css">
+ .thisinplabel label{float:right;} 
+  .thisinplabel input[type="text"]{width:70%;display: block;float:left;}
+.thisinplabel em{float:left;}
+</style>
+{/literal}
+</head>
+<body>
+<div id="dcWrap">
+ {include file="header.htm"}
+ <div id="dcLeft">{include file="menu.htm"}</div>
+ <div id="dcMain">
+   {include file="ur_here.htm"}
+   <div class="mainBox" style="{$workspace.height}">
+    <h3>费率设置</h3>
+    <script type="text/javascript">
+     {literal}
+     $(function(){ $(".idTabs").idTabs(); });
+     {/literal}
+    </script>
+    <div class="idTabs">
+      <ul class="tab">
+        <li><a href="#ystype">产妇护理分类</a></li>
+        <li><a href="#ysfate">新生儿护理分类</a></li>
+        <li><a href="#yustype">育婴师分类</a></li>  
+        <li><a href="#yusfate">费率和人员设置</a></li>
+  
+      </ul>
+    <div class="items">
+    <div id="ystype">
+      <h3>产妇护理</h3>
+            <form  method="post" action="fate.php?rec=addtype">   
+            <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+              <td>上级分类</td>
+              <td>
+                <select name="fid">
+                  <option value="1">无</option>
+                  <!-- {foreach from=$list item=cf} -->
+                      <!-- {if $cf.fid eq '1'} -->
+                      <option value="{$cf.id}">{$cf.name}</option>              
+                      <!--{/if}-->
+                      <!-- {/foreach} -->
+                </select>          
+              </td>
+
+            </tr>
+            <tr>
+              <td>分类名称</td>
+              <td><input type="text" name="typename" class="inpMain" ></td>
+            </tr>
+            <tr>
+              <td></td><td><input type="submit" class="btn"  value="添加"></td>
+            </tr>
+            </table>
+            </form>
+         <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic thisinplabel">  
+            <tr>       
+              <th align="center" >分类</th>
+              <th align="left" >操作</th>
+            </tr>
+            <!-- {foreach from=$list item=cf} -->
+            <!-- {if $cf.fid eq '1'} -->
+             <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf.id}"> 
+            <tr>
+              <td ><input type="text" name="t_name" width="70%" value="{$cf.name}"></td>
+              <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+              <a href="fate.php?rec=deltype&id={$cf.id}">删除</a>              
+              </td>
+            </tr>
+            </form>
+               <!-- {foreach from=$list item=cf2} -->
+               <!-- {if $cf2.fid eq $cf.id} -->
+                <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf2.id}"> 
+                <tr>
+                  <td><em>---</em><input type="text" name="t_name" width="70%" value="{$cf2.name}">
+                    <!-- {foreach from=$fate item=fat} -->
+                  <label><input type="checkbox"  value="{$fat.id}" name="fat[]" <!--{if $fat.id|in_array:$cf2.fate}-->checked<!--{/if}--> >{$fat.name}</label>
+                  <!-- {/foreach} -->
+                 </td>
+                  <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+                  <a href="fate.php?rec=deltype&id={$cf2.id}">删除</a>                  
+                  </td>
+                </tr>
+                </form>
+                <!--{/if}-->
+                <!-- {/foreach} -->
+            <!--{/if}-->
+            <!-- {/foreach} -->
+         </table>
+    
+
+
+
+      
+    
+    </div>
+    <div id="ysfate">
+      <h3>新生儿护理</h3>
+      <form  method="post" action="fate.php?rec=addtype">   
+      <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <td>上级分类</td>
+        <td>
+          <select name="fid">
+            <option value="2">无</option>
+            <!-- {foreach from=$list item=cf} -->
+                <!-- {if $cf.fid eq '2'} -->
+                <option value="{$cf.id}">{$cf.name}</option>              
+                <!--{/if}-->
+                <!-- {/foreach} -->
+          </select>          
+        </td>
+
+      </tr>
+      <tr>
+        <td>分类名称</td>
+        <td><input type="text" name="typename" class="inpMain" ></td>
+      </tr>
+      <tr>
+        <td></td><td><input type="submit" class="btn"  value="添加"></td>
+      </tr>
+      </table>
+      </form>    
+         <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic thisinplabel">  
+            <tr>       
+              <th align="center" >分类</th>
+              <th align="left" >操作</th>
+            </tr>
+            <!-- {foreach from=$list item=cf} -->
+            <!-- {if $cf.fid eq '2'} -->
+             <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf.id}"> 
+            <tr>
+              <td ><input type="text" name="t_name" width="70%" value="{$cf.name}"></td>
+              <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+              <a href="fate.php?rec=deltype&id={$cf.id}">删除</a>              
+              </td>
+            </tr>
+            </form>
+               <!-- {foreach from=$list item=cf2} -->
+               <!-- {if $cf2.fid eq $cf.id} -->
+                <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf2.id}"> 
+                <tr>
+                  <td><em>---</em><input type="text" name="t_name" width="70%" value="{$cf2.name}">
+                    <!-- {foreach from=$fate item=fat} -->
+                  <label><input type="checkbox"  value="{$fat.id}" name="fat[]" <!--{if $fat.id|in_array:$cf2.fate}-->checked<!--{/if}--> >{$fat.name}</label>
+                  <!-- {/foreach} -->
+                 </td>
+                  <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+                  <a href="fate.php?rec=deltype&id={$cf2.id}">删除</a>                  
+                  </td>
+                </tr>
+                </form>
+                <!--{/if}-->
+                <!-- {/foreach} -->
+            <!--{/if}-->
+            <!-- {/foreach} -->
+         </table>
+      
+    </div>
+    
+    <div id="yustype">
+      <h3>育婴师</h3>
+      <form  method="post" action="fate.php?rec=addtype">   
+      <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+      <tr>
+        <td>上级分类</td>
+        <td>
+          <select name="fid">
+            <option value="3">无</option>
+            <!-- {foreach from=$list item=cf} -->
+                <!-- {if $cf.fid eq '3'} -->
+                <option value="{$cf.id}">{$cf.name}</option>              
+                <!--{/if}-->
+                <!-- {/foreach} -->
+          </select>          
+        </td>
+
+      </tr>
+      <tr>
+        <td>分类名称</td>
+        <td><input type="text" name="typename" class="inpMain" ></td>
+      </tr>
+      <tr>
+        <td></td><td><input type="submit" class="btn"  value="添加"></td>
+      </tr>
+      </table>
+      </form>    
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic thisinplabel">  
+            <tr>       
+              <th align="center" >分类</th>
+              <th align="left" >操作</th>
+            </tr>
+            <!-- {foreach from=$list item=cf} -->
+            <!-- {if $cf.fid eq '3'} -->
+             <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf.id}"> 
+            <tr>
+              <td ><input type="text" name="t_name" width="70%" value="{$cf.name}"></td>
+              <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+              <a href="fate.php?rec=deltype&id={$cf.id}">删除</a>              
+              </td>
+            </tr>
+            </form>
+               <!-- {foreach from=$list item=cf2} -->
+               <!-- {if $cf2.fid eq $cf.id} -->
+                <form name="myform" id="myform" style="display:none" method="post" action="fate.php?rec=update&id={$cf2.id}"> 
+                <tr>
+                  <td><em>---</em><input type="text" name="t_name" width="70%" value="{$cf2.name}">
+                    <!-- {foreach from=$fate item=fat} -->
+                  <label><input type="checkbox"  value="{$fat.id}" name="fat[]" <!--{if $fat.id|in_array:$cf2.fate}-->checked<!--{/if}--> >{$fat.name}</label>
+                  <!-- {/foreach} -->
+                 </td>
+                  <td><input type="submit" style="cursor:pointer" value="更新">&nbsp;
+                  <a href="fate.php?rec=deltype&id={$cf2.id}">删除</a>                  
+                  </td>
+                </tr>
+                </form>
+                <!--{/if}-->
+                <!-- {/foreach} -->
+            <!--{/if}-->
+            <!-- {/foreach} -->
+         </table>
+    </div>
+    <div id="yusfate">
+    <div class="items" style="margin-top:20px;">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">  
+    
+      <tr>       
+       <th align="center" >费率名称</th>    
+       <th align="center" >月嫂</th>
+       <th align="center" >育婴师</th>
+       <th align="center" >操作</th>
+      </tr>
+    <!-- {foreach from=$fate item=fateitem} -->
+          
+    <form  method="post" action="fate.php?rec=fateupdate">   
+      <tr>       
+       <td align="center"><input type="hidden" name="id" value="{$fateitem.id}"><input type="text" class="inpMain"  value="{$fateitem.name}" name="fate_name"></td>      
+       <td align="center"><input type="text" class="inpMain"  value="{$fateitem.money1}" name="fate_money1"></td>
+       <td align="center"><input type="text" class="inpMain"   value="{$fateitem.money2}" name="fate_money2"></td>
+
+       <td align="center"><input type="submit" class="btn" value="更新">&nbsp;<a href="fate.php?rec=delfate&id={$fateitem.id}">删除</a> </td>
+      </tr>  
+  </form>
+ 
+   <!-- {/foreach} -->
+  <form  method="post" action="fate.php?rec=fateadd"> 
+      <tr>       
+       <td align="center"><input type="text" class="inpMain"  value="" name="fate_name"></td>  
+       <td align="center"><input type="text" class="inpMain"  value="" name="fate_money1"></td>
+       <td align="center"><input type="text" class="inpMain"   value="" name="fate_money2"></td>
+       <td align="center"><input type="submit" class="btn" value="添加"></td>
+      </tr>  
+      </form>
+    </table>
+  
+
+   
+    
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic" style="margin-top:20px;">  
+    
+      <tr>       
+       <th align="center" >月嫂</th>    
+       <th align="center" >育婴师</th>
+       <th align="center" >专业服务</th>
+       <th align="center" >培训课程</th>
+       <th align="center" >操作</th>
+      </tr>
+      <form  method="post" action="fate.php?rec=number"> 
+      <tr>       
+       <td align="center"><input type="text" class="inpMain"  value="{$num1}" name="num1">位 </td>
+  
+       <td align="center"><input type="text" class="inpMain"  value="{$num2}" name="num2">位</td>
+       <td align="center"><input type="text" class="inpMain"   value="{$num3}" name="num3">项</td>
+       <td align="center"><input type="text" class="inpMain"   value="{$num4}" name="num4">节</td>
+       <td align="center"><input type="submit" class="btn" value="更新"></td>
+      </tr>  
+      </form>
+    </table>
+
+    </div></div>
+
+    </div>
+   </div></div>
+ </div>
+ {include file="footer.htm"}
+ </div>
+
+ <script type="text/javascript">
+ {literal}
+
+{/literal}
+ </script>
+</body>
+</html>

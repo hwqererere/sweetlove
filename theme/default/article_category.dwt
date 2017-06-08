@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  <script type="text/javascript" src="theme/default/images/jquery.min.js"></script>
+  
+</head>
+<body>
+{include file="inc/top.tpl"}
+<div class="html mt30">
+    <div class="body" >
+          <h1 class="purpose">母婴课堂</h1>
+        <h3 class="purpose-title colorFF8AB9">New Mother School</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgFF8AB9"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+<div class="listleft">
+  <a class="bg84BF2C" href="list.php?cat_id=8">育儿知识</a>
+  <a class="bgF25795" href="list.php?cat_id=9">孕期知识</a>
+  <a class="bgEC774B" href="list.php?cat_id=10">新闻八卦</a>
+  <a class="bgEDBF47" href="list.php?cat_id=11">月子知识</a> 
+  <a class="bgE16C6C" href="list.php?cat_id=13">备孕须知</a>
+  <a class="bg85D2E7" href="list.php?cat_id=14">生活小贴士</a>
+</div>
+<div class="listright">
+<table width="100%">
+
+
+   <!-- {foreach from=$article_list name=article_list item=article} -->
+      <tr>
+        <td align="left"><a href="{$article.url}">{$article.title}</a></td><td align="right">{$article.add_time_short}</td>
+
+      </tr>
+      <!-- {/foreach} -->
+  <tr><td></td><td align="center">{include file="inc/pager.tpl"}</td></tr>
+
+
+</table></div>
+</div></div>
+
+ 
+
+    
+  
+      
+     
+     
+
+
+ {include file="inc/foot.tpl"} 
+</body>
+</html>

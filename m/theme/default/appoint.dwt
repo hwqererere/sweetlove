@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+           <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+    <title>在线预约_{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+    
+
+
+
+
+
+
+<!--f3-->
+<aside>
+   <form action="appoint.php?rec=appoint" method="post">
+      <table style="float:left;width:60%;margin-left:20%;">
+         <!-- {if $rec eq '1'} -->
+          <tr><td style="color:#ff0000">预约已提交</td></tr>  
+         <!--{/if}-->
+        <tr><td>称呼</td></tr>
+        <tr><td><input type="text" name="name" style="width:100%;border-radius: 3px;border:1px solid #80b92d" /></td></tr>
+        <tr><td>联系方式</td></tr>
+        <tr><td><input type="text" name="contact"  style="width:100%;border-radius: 3px;border:1px solid #80b92d"/></td></tr>
+        <tr><td>留言内容</td></tr>
+        <tr><td><textarea name="val" style="width:100%;height:100px;border-radius: 3px;border:1px solid #80b92d"></textarea></td></tr>
+        <tr><td><input type="submit" value="确认" style="border:0px;color:#fff;background-color:#f25795;border-radius: 3px;padding:5px;cursor:pointer;" /></td></tr>
+      </table>
+      </form>
+
+</aside>
+<div class="clear"></div>
+<!--f3-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+    
+<!--bot-->
+</body>
+
+
+</html>
+
+

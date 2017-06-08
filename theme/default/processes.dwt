@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>{$article_category_title}_{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  
+</head>
+<body>
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+
+
+    <!--banner5-->
+    <div class="html liucheng">
+      
+    </div>
+    <!--banner5-->
+  <div class="cl"></div>
+
+  <!--服务步骤流程图-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">服务步骤流程图</h1>
+        <h3 class="purpose-title colorF6AD02">SERVICE PROCESS</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgF6AD02"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      
+      <ul class="liucheng-ul mt40">
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>1</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">客户需求</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/you.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>2</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">客户需求分析及服务方案定制</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/you.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>3</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">月嫂/育婴师推荐</td>
+            </tr>
+          </table>
+        </li>
+
+        
+      </ul>
+
+      <ul class="dows-lc">
+        <li class="xd2">
+        <img src="images/xia.png" />
+          <div class="line"></div>
+
+        </li>
+
+      </ul>
+
+      <ul class="liucheng-ul ">
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>6</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">月嫂/育婴师服务合同签订</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/zuo.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>5</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">月嫂/育婴师面试</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/zuo.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>4</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">月嫂/育婴师简历及相关资料发送</td>
+            </tr>
+          </table>
+        </li>
+
+        
+      </ul>
+
+      <ul class="dows-lc">
+        <li class="xd3">
+        <img src="images/xia.png" />
+          <div class="line"></div>
+
+        </li>
+
+      </ul>
+
+      <ul class="liucheng-ul ">
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>7</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">费用支付及保险购买</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/you.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>8</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">月嫂/育婴师上岗服务</td>
+            </tr>
+          </table>
+        </li>
+
+        <li class="xd1">
+        <img src="images/you.png" />
+          <div class="line"></div>
+
+        </li>
+
+        <li class="buzhou">
+          <span>STEP</span>
+          <i>9</i>
+        </li>
+        <li class="buzhou-txt">
+          <table cellpadding="0" cellspacing="0" class="buzhou-tab">
+            <tr>
+              <td valign="middle" align="center">定期回访跟踪服务</td>
+            </tr>
+          </table>
+        </li>
+
+        
+      </ul>
+
+
+    </div>
+  </div>
+  <!--服务步骤流程图-->
+  <div class="cl"></div>
+
+
+  <div class="cl"></div>
+  <!--banners-->
+    <div class="html mt30 bannes">
+      <div class="body">
+        <div class="tian-but2 clearfix">
+        <center>
+          <span  class="mr10 "><i class="shouji-no">{$tel}</i></span>
+          <span class="" ><i class="zuoji-no">{$fax}</i></span>
+        </center>
+        </div>        
+      </div>
+    </div>
+  <!--banners-->
+   {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+  <script data-main="main" src="js/require.js"></script>
+</body> 
+
+</html>

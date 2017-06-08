@@ -1,0 +1,280 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+   <title>{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="images/jquery.min.js"></script>
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+    
+<!--head-->
+
+ 
+<!--banner-->
+    <aside>
+        <section class="banner-w">
+            <div class="banner">
+                 <!-- {foreach from=$show_list name=show item=show} -->
+    <div><a href="{$show.show_link}" target="_blank" ><img src="{$show.show_img}" style="width:100%;height:100%" /></a></div>
+    
+      <!-- {/foreach} -->
+                
+
+            </div>
+
+        </section>
+
+    </aside>
+<!--banner-->
+
+ <div class="clear"></div>
+<!--f1-->     
+    <aside>         
+        <section class="banner-w fu-title">
+            <h3>服务宗旨</h3> <h5 class="colorF6AD02">SERVICEAIM</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgF6AD02"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+    
+
+            <!--list-->
+                <ul class="fu-main-list">
+                    <li >
+                        <div class="fum1"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="colorF6AD02">细心</span>Intimate
+                            <p>
+                                {$zz_description1}                        
+                            </p>
+                        </div>
+                        
+                    </li>
+
+                    <li >
+                        <div class="fum2"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="colorEC6921">专心</span>Attentive
+                            <p>
+                                {$zz_description2}                             
+                            </p>
+                        </div>
+                        
+                    </li>
+
+                    <li >
+                        <div class="fum3"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="color80B92D">耐心</span>Patience
+                            <p>
+                                {$zz_description3}                           
+                            </p>
+                        </div>
+                        
+                    </li>
+
+                     <li >
+                        <div class="fum4"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="color85D2E7">放心</span>Relieved
+                            <p>
+                                {$zz_description4}                               
+                            </p>
+                        </div>
+                        
+                    </li>
+
+                     <li >
+                        <div class="fum5"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="colorF25795">贴心</span>Close
+                            <p>
+                                {$zz_description5}                               
+                            </p>
+                        </div>
+                        
+                    </li>
+
+                     <li >
+                        <div class="fum6"></div>
+
+                        <div class="fu-main-list-title">
+                            <span class="colorE16C6C">舒心</span>Happy
+                            <p>
+                                {$zz_description6}                                
+                            </p>
+                        </div>
+                        
+                    </li>
+                    
+                </ul>
+            <!--list-->
+
+        </section>
+    </aside>
+     <div class="clear"></div>
+<!--f1-->
+
+<!--f2-->
+    <aside>
+        <section class="banner-w fu-title">
+            <h3>服务内容</h3> <h5 class="colorF25795">SERVICES INCLUDE</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bgF25795"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+
+            <!--list-->
+                <div class="wufu-title">月嫂服务</div>
+                <div class="wufu-pic"><img src="images/ad1.png" /></div>
+                <ul class="wufu-ul">
+                    <!-- {foreach from=$sv1 item=cf} -->
+                <li ><a href="javascript:;">{$cf.name}</a></li>                
+                <!-- {/foreach} -->
+                    
+                </ul>
+                <div class="wufu-bot"><a href="yue.php" class="colorFF8AB9">查看详情</a></div>
+            <!--list-->
+
+            <!--list-->
+                <div class="wufu-title">育婴师服务</div>
+                <div class="wufu-pic"><img src="images/ad2.png" /></div>
+                <ul class="wufu-ul">
+                     <!-- {foreach from=$sv2 item=cf} -->
+
+                <li class=""><a href="javascript:;">{$cf.name}</a></li>
+
+                <!-- {/foreach} -->
+                   
+                </ul>
+                <div class="wufu-bot"><a href="yus.php" class="color85D2E7">查看详情</a></div>
+            <!--list-->
+
+        </section>
+    </aside>
+    <div class="clear"></div>
+<!--f2-->
+
+
+<!--f3-->
+    <aside>
+        <section class="banner-w fu-title">
+            <h3>母婴课堂</h3> <h5 class="color85D2E7">New Mother School</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bg85D2E7"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+
+            <!--list-->
+                <ul class="mou-ul">
+                    <li class="left">
+                        <div class="mou-pic"><img src="../{$art_image}" /></div>
+                        <div class="mou-text bg85D2E7">
+                             <h1>{$art_title|truncate:15:"…"}</h1>
+                            <span>{$art_description|truncate:43:"…"}</span>
+                            <a href="list.php?cat_id=8">MORE <font>&gt;</font></a>
+                        </div>
+                    </li> 
+                    <li class="right">
+                        
+                        <div class="mou-pic"><img src="../{$brt_image}" /></div>
+                        <div class="mou-text bg84BF2C">
+                             <h1>{$brt_title|truncate:15:"…"}</h1>
+                            <span>{$brt_description|truncate:43:"…"}</span>
+                            <a href="list.php?cat_id=9">MORE <font>&gt;</font></a>
+                        </div>
+                    </li>
+
+                    <li class="left">
+                        <div class="mou-pic"><img src="../{$crt_image}" /></div>
+                        <div class="mou-text bgEC774B">
+                             <h1>{$crt_title|truncate:15:"…"}</h1>
+                            <span>{$crt_description|truncate:43:"…"}</span>
+                            <a href="list.php?cat_id=10">MORE <font>&gt;</font></a>
+                        </div>
+                    </li> 
+                    <li class="right">
+                        
+                        <div class="mou-pic"><img src="../{$drt_image}" /></div>
+                        <div class="mou-text bgEDBF47">
+                             <h1>{$drt_title|truncate:15:"…"}</h1>
+                            <span>{$drt_description|truncate:43:"…"}</span>
+                            <a href="list.php?cat_id=11">MORE <font>&gt;</font></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+       <!--          <center>
+                <a href="javascript:;" class="lj-more">了解跟多...</a>   
+                <div class="clear"></div>
+                </center>  -->
+            <!--list-->
+        </section>
+    </aside>
+    <div class="clear"></div>
+
+
+<!--f3-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+    
+<!--bot-->
+<script>
+{literal}
+  var div=$(".banner").find("div");
+  if(div.length>1){
+    $(".banner").attr("_index","0");
+    setInterval(function(){
+      var nex=$(".banner").attr("_index")-0+1;
+      if(nex==div.length){
+        nex=0;
+      }
+      div.eq($(".banner").attr("_index")).css("z-index","999");
+      div.eq(nex).css("z-index","99");
+      div.eq($(".banner").attr("_index")).animate({opacity:0},1000,function(){
+        div.eq($(".banner").attr("_index")).css("z-index","0");
+        div.eq($(".banner").attr("_index")).css("opacity","1");
+        $(".banner").attr("_index",nex);
+      });
+    },10000);
+  }
+
+  function AddFavorite(title, url) {
+ try {
+   window.external.addFavorite(url, title);
+ }
+catch (e) {
+   try {
+    window.sidebar.addPanel(title, url, "");
+  }
+   catch (e) {
+     alert("抱歉，您所使用的浏览器无法完成此操作。\n\n加入收藏失败，请进入新网站后使用Ctrl+D进行添加");
+   }
+ }
+}
+{/literal}
+</script>
+</body>
+
+
+</html>

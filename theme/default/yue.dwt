@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>{$article_category_title}_{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  
+
+</head>
+<body>
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+  <input id="sel" value="{$sel}" type="hidden">
+  <!--banner-->
+  <div class="html yuesao">
+    <div class="body">
+      <h1 class="colorD92E72">{$article_category_title}</h1>
+      <div class="yuesao-text">{$article_category_description}</div> 
+    </div>
+  </div>
+
+  <!--banner-->
+
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">产妇护理服务</h1>
+        <h3 class="purpose-title colorFF8AB9">PUERPERA SERVICES</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgFF8AB9"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      <div class="yuesao-cont">
+        <ul class="yuesao-ul-1">
+        
+          <li class="yuesao-list1" style="background:url({$article_0_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article_0_title}</div><span class="span">{$article_0_content}</span></div>
+            <div class="list1-text title1"></div>
+          </li>
+        
+          <li class="yuesao-list2" style="background:url({$article_1_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article_1_title}</div><span class="span">{$article_1_content}</span></div>
+            <div class="list1-text title1"></div>
+          </li>
+       
+        </ul>
+
+        <ul class="yuesao-ul-1">
+          
+          <li class="yuesao-list3" style="background:url({$article_2_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article_2_title}</div><span class="span">{$article_2_content}</span></div>
+            <div class="list1-text title1"></div>
+          </li> 
+          
+          <li class="yuesao-list4" style="background:url({$article_3_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article_3_title}</div><span class="span">{$article_3_content}</span></div>
+            <div class="list1-text title1"></div>
+          </li>
+          
+          <li class="yuesao-list5" style="background:url({$article_4_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article_4_title}</div><span class="span">{$article_4_content}</span></div>
+            <div class="list1-text title1"></div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="cl"></div>
+  <!--新生儿护理服务-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">新生儿护理服务</h1>
+        <h3 class="purpose-title color84BF2C">NEW BORN BABY SERVICES</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bg84BF2C"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      <div class="yuesao-cont">
+        <ul class="yuesao-ul-1">
+        
+          <li class="yuesao-list6" style="background:url({$article2_0_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article2_0_title}</div><span class="span">{$article2_0_content}</span></div>
+            <div class="list1-text title2"></div>
+          </li>
+        
+          <li class="yuesao-list7" style="background:url({$article2_1_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article2_1_title}</div><span class="span">{$article2_1_content}</span></div>
+            <div class="list1-text title2"></div>
+          </li>
+        
+
+        </ul>
+
+        <ul class="yuesao-ul-1">
+        
+          <li class="yuesao-list8" style="background:url({$article2_2_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article2_2_title}</div><span class="span">{$article2_2_content}</span></div>
+            <div class="list1-text title2"></div>
+          </li>
+        
+          <li class="yuesao-list9" style="background:url({$article2_3_image}) no-repeat">
+            <div class="fu-texts"><div class="div">{$article2_3_title}</div><span class="span">{$article2_3_content}</span></div>
+            <div class="list1-text title2"></div>
+          </li>
+        
+
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+  <!--新生儿护理服务-->
+
+  <div class="cl"></div>
+
+  <!--服务资费-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">服务资费</h1>
+        <h3 class="purpose-title colorFF8AB9">SERVICES PRICE</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bgFF8AB9"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+    
+
+      <table cellpadding="0" cellspacing="0" class="qian">
+        <tr>
+          <td colspan="3" rowspan="2" align="center"><span class="colorFF8AB9 fontsize30">甜爱母婴月嫂服务内容</span></td>
+           <!-- {foreach from=$fate item=fat name=fat} -->
+           {if $fat.money1 > 1} 
+          <td class="lve1" width="150px" style=" {if $smarty.foreach.fat.index == 0} background-color:#e16567 {/if}{if $smarty.foreach.fat.index == 1} background-color:#ec6601 {/if}{if $smarty.foreach.fat.index == 2} background-color:#f6ab00 {/if}{if $smarty.foreach.fat.index == 3}background-color:#653d94 {/if}"><label>&nbsp;{$fat.name}&nbsp;</label><br/><span >元/月</span></td>    
+          {/if}      
+          <!-- {/foreach} -->
+        </tr>
+        <tr>
+          <!-- {foreach from=$fate item=fat} -->
+          {if $fat.money1 > 1} 
+          <td class="lve1-q">{$fat.money1}</td>     
+          {/if}     
+          <!-- {/foreach} -->
+        </tr>
+        
+
+
+        {$cont1}
+       {$cont2}
+
+
+      </table>
+    </div>
+  </div>
+  <!--服务资费-->
+   {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script>
+{literal}
+  $(".yuesao-cont").find("li").click(function(){
+    var li=$(this);
+    
+    if(li.find(".list1-text").height()=="78"){
+      $(".yuesao-cont").find("li").find(".list1-text").not(this).css("height","78px");
+      $(".yuesao-cont").find("li").find(".fu-texts").not(this).css("height","78px");
+      $(".yuesao-cont").find("li").find("span").not(this).hide();
+      li.find("span").show();
+      li.find(".list1-text").animate({height:$(this).parent().height()+"px"});
+      li.find(".fu-texts").animate({height:$(this).parent().height()+"px"});
+    }else{
+      var li=$(this);
+      li.find(".list1-text").animate({height:"78px"});
+      li.find(".fu-texts").animate({height:"78px"});
+      li.find("span").hide();
+    }
+    
+  
+  });
+  var v=Number($("#sel").val());
+
+  if(v>-1 && v!=""){
+    $(".yuesao-cont").find("li").eq(v).click();
+  }
+{/literal}
+
+
+</script>
+</body> 
+</html>

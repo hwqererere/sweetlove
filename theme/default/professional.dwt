@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{$article_category_title}_{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  <script src="theme/default/images/jquery-1.11.2.min.js"></script>
+  <script src="theme/default/images/tab.js"></script>
+</head>
+<body>
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+  
+  <!--banner-->
+  <div class="html peixun banner-txt">
+    <div class="body">
+      <h1 class="color07B5D4">{$article_category_title}</h1>
+      <div class="yuesao-text">{$article_category_description}</div>
+    </div>
+  </div>
+
+  <!--banner-->
+  <div class="cl"></div>
+  <!--培训项目-->
+  
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">培训项目</h1>
+        <h3 class="purpose-title color07B5D4">TRAINING PROGRAM</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bg07B5D4"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      <div class="peixun-list mt30">
+        <div class="peixun-title">
+          <ul id="tab" class="peixun-ul-cur">
+            <li class="active">{$article_0_title}</li>
+            <li>{$article_1_title}</li>
+            <li>{$article_2_title}</li>
+            <li style="float: right;margin-right: 0;">{$article_3_title}</li>
+            <div class="cl"></div>
+          </ul>
+          
+          
+          <ul id="tab-list" class="peixun-ul-txts">
+            <li style="display: block;">
+              {$article_0_content}
+            </li>
+            
+            <li> {$article_1_content}</li>
+            <li> {$article_2_content}</li>
+            <li> {$article_3_content}</li>
+
+          </ul>
+
+
+        </div>  
+      </div>
+
+    </div>
+  </div>
+
+  <div class="cl"></div>
+  <!--培训项目--> 
+
+  <div class="cl"></div>
+  <!--banners-->
+    <div class="html mt30 bannes">
+      <div class="body">
+        <div class="tian-but2 clearfix">
+        <center>
+          <span  class="mr10 "><i class="shouji-no">{$tel}</i></span>
+          <span class="" ><i class="zuoji-no">{$fax}</i></span>
+        </center>
+        </div>        
+      </div>
+    </div>
+  <!--banners-->
+<script type="text/javascript">
+{literal}
+    // $("#tab li").hover(function(){
+    //   var ind=$(this).index();
+    //   $("#tab li").removeClass("active");
+    //   $("#tab li").eq(ind).addClass("active");
+
+
+    // },function(){});
+{/literal}
+  </script>
+   {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+</body> 
+</html>

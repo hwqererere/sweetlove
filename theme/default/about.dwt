@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>关于甜爱_{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+
+</head>
+<body>
+
+{include file="inc/top.tpl"}
+    <div class="cl"></div>
+  
+  
+  <!--banner7-->
+  <div class="html  about-banner">
+
+  </div>
+  <!--banner7-->
+
+  <div class="cl"></div>
+
+  <!--企业简介-->
+  <div class="html mt30">
+    <div class="body">
+      <h1 class="purpose">企业简介</h1>
+        <h3 class="purpose-title color80B92D">About TAMY</h3>
+        <div class="relative purpose-line">
+          <div class="purpose-bg-line bg80B92D"></div>
+          <div class="purpose-r-line"></div>
+        </div>
+
+      
+
+
+      <!--aa-->
+        <ul class="about-us">
+          <li class="about-pic">
+            <img src="images/about1.png" />
+            <img src="images/about2.png" />
+          </li>
+
+          <li class="about-txt" style="font-size:18px;line-height:32px;">
+         {$article_0_content}
+    
+          </li>
+        <div class="cl"></div>
+        </ul>
+    
+      <!--aa-->
+    </div>
+  </div>
+  <!--企业简介-->
+  <div class="cl"></div>
+     {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+</body> 
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$lang.home}{if $ur_here} - 费率设置 {/if}</title>
+<meta name="Copyright" content="Douco Design." />
+<link href="templates/public.css" rel="stylesheet" type="text/css">
+{include file="javascript.htm"}
+<script type="text/javascript" src="images/jquery.tab.js"></script>
+{literal}
+<style type="text/css">
+ .thisinplabel label{float:right;} 
+  .thisinplabel input[type="text"]{width:70%;display: block;float:left;}
+.thisinplabel em{float:left;}
+</style>
+{/literal}
+</head>
+<body>
+<div id="dcWrap">
+ {include file="header.htm"}
+ <div id="dcLeft">{include file="menu.htm"}</div>
+ <div id="dcMain">
+   {include file="ur_here.htm"}
+   <div class="mainBox" style="{$workspace.height}">
+    <h3>费率设置</h3>
+    <script type="text/javascript">
+     {literal}
+     $(function(){ $(".idTabs").idTabs(); });
+     {/literal}
+    </script>
+    <div class="idTabs">
+      <ul class="tab">
+        <li><a href="#wcl">未处理</a></li>
+        <li><a href="#ycl">已处理</a></li>
+       
+  
+      </ul>
+    <div class="items">
+      <div id="wcl">  
+          <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr><th width="15">称呼</th><th width="15%">联系方式</th><th>留言</th><th width="10%">操作</th></tr>
+             <!-- {foreach from=$list1 item=list1} -->
+              <tr><td>{$list1.name}</td><td>{$list1.content}</td><td>{$list1.val}</td><td><a href="appoint.php?rec=done&id={$list1.id}">处理完成</a>&nbsp;<a href="appoint.php?rec=del&id={$list1.id}">删除</a></td></tr>
+             <!-- {/foreach} -->
+          </table>
+      </div>
+    
+      <div id="ycl">
+          <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr><th width="15">称呼</th><th width="15%">联系方式</th><th>留言</th><th width="10%">操作</th></tr>
+             <!-- {foreach from=$list2 item=list2} -->
+              <tr><td>{$list2.name}</td><td>{$list2.content}</td><td>{$list2.val}</td><td><a href="appoint.php?rec=del&id={$list2.id}">删除</a></td></tr>
+             <!-- {/foreach} -->
+          </table>
+      </div>
+    
+
+    </div>
+   </div></div>
+ </div>
+ {include file="footer.htm"}
+ </div>
+
+ <script type="text/javascript">
+ {literal}
+
+{/literal}
+ </script>
+</body>
+</html>

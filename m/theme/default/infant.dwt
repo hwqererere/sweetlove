@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>母婴课堂</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+<!--head-->
+  <!--banner-->
+         <aside>
+            <section class="banner-w fu-title">
+                <div class="nei-banner">
+                    <img src="images/banner5.png">
+                </div>
+            </section>
+         </aside>
+    <!--banner-->
+ <!--mulu-->
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>母婴课堂</h3> <h5 class="color85D2E7">New Mother School</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bg85D2E7"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+        <!--list--> 
+            <ul class="class-index">
+                <li class="left"><a href="list.php?cat_id=8" class="class-index1">{$cat_name1}</a></li>
+                <li class="right"><a href="list.php?cat_id=9" class="class-index2">{$cat_name2}</a></li>
+
+                <li class="left"><a href="list.php?cat_id=10" class="class-index3">{$cat_name3}</a></li>
+                <li class="right"><a href="list.php?cat_id=11" class="class-index4">{$cat_name4}</a></li>
+
+                <li class="left"><a href="list.php?cat_id=13" class="class-index5">{$cat_name5}</a></li>
+                <li class="right"><a href="list.php?cat_id=14" class="class-index6">{$cat_name6}</a></li>
+ 
+
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+        <!--list-->
+        </section>
+
+    </aside>
+<!--mulu-->
+<!--bot-->
+{include file="inc/footer.tpl"}
+<!--bot-->
+</body>
+
+
+</html>

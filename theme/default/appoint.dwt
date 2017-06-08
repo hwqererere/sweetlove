@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+  <title>在线预约_{$page_title}</title>
+  <link rel="stylesheet" type="text/css" href="theme/default/common.css">
+  <link rel="stylesheet" type="text/css" href="theme/default/style.css">
+  
+</head>
+<body>
+{include file="inc/top.tpl"}
+
+  <div class="html">
+    <div class="body yuyuebg">
+    <form action="appoint.php?rec=appoint" method="post">
+      <table style="float:right;width:40%;margin-right:15%;margin-top:5%;">
+         <!-- {if $rec eq '1'} -->
+          <tr><td style="color:#ff0000">预约已提交</td></tr>  
+         <!--{/if}-->
+        <tr><td>称呼</td></tr>
+        <tr><td><input type="text" name="name" style="width:100%;border-radius: 3px;border:1px solid #80b92d" /></td></tr>
+        <tr><td>联系方式</td></tr>
+        <tr><td><input type="text" name="contact"  style="width:100%;border-radius: 3px;border:1px solid #80b92d"/></td></tr>
+        <tr><td>留言内容</td></tr>
+        <tr><td><textarea name="val" style="width:100%;height:100px;border-radius: 3px;border:1px solid #80b92d"></textarea></td></tr>
+        <tr><td><input type="submit" value="确认" style="border:0px;color:#fff;background-color:#f25795;border-radius: 3px;padding:5px;cursor:pointer;" /></td></tr>
+      </table>
+      </form>
+    </div>
+  </div>
+
+
+
+    <div class="cl"></div>
+  
+
+   {include file="inc/online_service.tpl"}
+{include file="inc/foot.tpl"}
+</body> 
+</html>

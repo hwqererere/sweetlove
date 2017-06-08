@@ -1,0 +1,219 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="{$keywords}" />
+  <meta name="description" content="{$description}" />
+    <title>{$article_category_title}_{$page_title}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ 
+<!--head-->
+{include file="inc/header.tpl"}
+<!--head-->
+
+    <!--banner-->
+         <aside>
+            <section class="banner-w fu-title">
+                <div class="nei-banner">
+                    <img src="images/banner3.png">
+                </div>
+            </section>
+         </aside>
+    <!--banner-->
+ <!--mulu-->
+    <aside>
+        <section class="banner-w fu-title">
+             <h3>服务步骤流程图</h3> <h5 class="color80B92D">SERVICE PROCESS</h5>
+            <div class="clear"></div>
+            <div class="fu-line">
+                <div class="fu-line-head bg80B92D"></div>
+                <div class="fu-line-wei"></div>
+            </div>
+        
+           <!--list-->
+                <div class="fuwu-list">
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>1</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">客户需求</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>2</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">客户需求分析及服务方案定制</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>3</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">月嫂/育婴师简历及相关资料发送</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>4</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">月嫂/育婴师面试</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>5</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">月嫂/育婴师服务合同签订</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>6</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">月嫂/育婴师推荐</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>7</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">费用支付及保险购买</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>8</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">月嫂/育婴师上岗服务</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                     <!--iocn-->
+                    <div class="fuwu-iocn">
+                        
+                    </div>
+                    <!--iocn-->
+
+
+                    <div class="fuwu-sx">
+                        <div class="fuwu-no">
+                            <span>STEP</span><em>9</em>
+                        </div>
+                        <div class="fuwu-kl">
+                           <table cellpadding="0" cellspacing="0">
+                               <tr>
+                                    <td valign="middl">定期回访跟踪服务</td>
+                               </tr>
+                           </table>
+                        </div>
+                    </div>
+                    
+                </div>  
+
+               
+           <!--list-->
+        </section>
+
+    </aside>
+    <div class="clear"></div>
+<!--mulu-->
+
+ 
+ 
+<!--bot-->
+{include file="inc/footer.tpl"}
+<!--bot-->
+</body>
+
+
+</html>
