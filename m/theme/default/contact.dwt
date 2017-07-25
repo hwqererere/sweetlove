@@ -61,8 +61,8 @@
                 </ul>
 
                 <ul class="lx-add2">
-                    <li><span>地铁：</span>10号线航中路站</li>
-                    <li><span>公交：</span>196、748、776、91、911、709、739、虹桥枢纽1路、闵行18路</li>
+                    <li><span>地铁：</span>2号线淞虹路站4号口</li>
+                    <li><span>公交：</span>825路、750路、74路、141路、316路、876路</li>
                     
                 </ul>
 
@@ -118,7 +118,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"甜爱母婴",content:"上海市长宁区协和路787号C北楼2层",point:"121.362408|31.222897",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"上海甜爱家政服务有限公司",content:"上海市长宁区协和路787号C北楼2层",point:"121.362408|31.222897",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
      ];
     //创建marker
     function addMarker(){

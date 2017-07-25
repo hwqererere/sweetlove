@@ -45,7 +45,7 @@
       <div style="width:1200px;height:360px;border:#ccc solid 1px;" id="dituContent"></div></div>
 
       <!--aa-->
-      <h1 class="contacts-title mt30">上海甜爱母婴护理有限公司</h1>
+      <h1 class="contacts-title mt30">上海甜爱家政服务有限公司</h1>
       <ul class="contacts mt20">
         <li><span>地址：</span>{$site_address}</li>
         <li><span>地铁：</span>2号线淞虹路站4号口</li>
@@ -104,7 +104,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"甜爱母婴",content:"上海市长宁区协和路787号C北楼2层",point:"121.362408|31.222897",isOpen:1,icon:{w:0,h:0,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"上海甜爱家政服务有限公司",content:"上海市长宁区协和路787号C北楼2层",point:"121.362408|31.222897",isOpen:1,icon:{w:0,h:0,l:0,t:0,x:6,lb:5}}
      ];
     //创建marker
     function addMarker(){
